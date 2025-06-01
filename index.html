@@ -1,1 +1,457 @@
-<h1>Prueba de página Wey</h1>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio - Noelia Garrido Jiménez</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+ 
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+ 
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js" defer></script>
+
+  <script async>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    tooltipTriggerList.forEach(el => new bootstrap.Tooltip(el));
+  </script>
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+
+        <img src="assets/img/logo-ram.png" alt="">
+       
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Inicio</a></li>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#services">Habilidades</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li class="dropdown toggle-dropdown"><a href="#" class="position-relative front-a"><span class="toggle-dropdown front-span">Front-End</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+               <li><a href="componentes/galira" class="submenu-a" target="_blank">Galira 3D | Web completa</a></li> 
+              <li><a href="componentes/household"  class="submenu-a">Household - Formulario | Maquetación</a></li>
+              <li><a href="componentes/offcanvas-stradivarius"  class="submenu-a">Menú offcanvas - Stradivarius | Maquetación</a></li>
+              <li><a href="componentes/generador-contraseña.html"  class="submenu-a">Generador de contraseñas | Javascript</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero_yllw.webp" alt="hero yellow" data-aos="fade-in">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="titlename">Noelia Garrido Jiménez<br></h2>
+        <p>I'm <span class="typed" data-typed-items="Designer., Front-Developer., Illustrator., Artist., Freelancer.">Designer.</span></p>
+        <div class="social-links">
+          <a href="www.linkedin.com/in/noeliagarridojimenez" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <!-- <a href="#"><i class="bi bi-behance"></i></a> 
+          <a href="#"><i class="bi bi-github"></i></a>  -->
+          <a href="mailto:ejemplo@correo.com?subject=Hola&body=Quiero%20contactarte" target="_blank" data-bs-toggle="tooltip" title="Contact"><i class="bi bi-envelope-at-fill"></i></a>
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Sobre mí</h2>
+
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-between">
+          <div class="col-lg-4 profile-img align-self-start">
+            <img src="assets/img/perfil_yllw.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-7 content">
+            <h3><span class="bg-warning">¡Hola!</span> Me llamo Noelia y desde siempre he sido una apasionada del arte, el diseño y transmitir creando ilustraciones.</h3>
+            <p>
+              Soy graduada en <strong>Bellas Artes con especialización
+              en Diseño Gráfico</strong>, además de ser ilustradora y,
+              recientemente, maquetadora de páginas web.</p>
+              <p>
+              Me gustó siempre el mundo del diseño editorial
+              y de producto, aunque recientemente descubrí
+              mi pasión por el <strong>diseño web</strong>.
+            </p>
+            <ul>
+              <li><i class="bi bi-cup-hot"></i> <span>La mayor parte de mi experiencia de casi <strong>dos años</strong> ha sido cómo <strong>Diseñadora Gráfica</strong>, pero siempre quise llevarlo a medios más tecnológicos.</span></li>
+              <li><i class="bi bi-cup-hot-fill"></i> <span>Con mi reciente <strong>certificado de profesionalidad en Creación y producción de páginas web</strong> entendí que me encanta el mundo de la programación, prestando especial atención y cuidado a la parte visual.</span></li>
+              <li><i class="bi bi-door-open-fill"></i> <span>Ahora busco oportunidades laborales a las que pueda aportar mi granito de arena para cualquier proyecto y seguir aprendiendo de programación cada vez más.</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Habilidades</h2>
+        <p>A continuación, hablo de mis capacidades que considero importantes respecto al mundo laboral.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-code-slash"></i></div>
+            <div>
+              <h4 class="title">Conocimientos técnicos clave</h4>
+              <p class="description">Tengo conocimientos sólidos en <strong>HTML</strong> y <strong>CSS</strong>, además de defenderme bien con <strong>JavaScript</strong>, pudiendo así construir interfaces web claras, funcionales y bien estructuradas desde cero.</p>
+              <!-- <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a> -->
+            </div>
+          </div>
+          <!-- End Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-arrows-angle-contract"></i></div>
+            <div>
+              <h4 class="title">Diseño responsive</h4>
+              <p class="description">Sé aplicar diseño responsivo mediante <strong>media queries</strong>, <strong>flexbox</strong> y grid, además del uso fluido de <strong>SCSS</strong> para una aplicación mas sencilla.</p><p class="description">Además procuro tener en cuenta principios de UX/UI para que los sitios sean accesibles en los diferentes dispositivos que pueda usar el usuario.</p>
+              <!-- <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a> -->
+            </div>
+          </div><!-- End Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-bootstrap"></i></div>
+            <div>
+              <h4 class="title">Frameworks</h4>
+              <p class="description">He trabajado con frameworks como Bootstrap y tengo nociones de Tailwind y GSAP, lo que me permite agilizar el trabajo con el uso de componentes reutilizables.</p>
+     
+            </div>
+          </div><!-- End Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i class="bi-brilliance"></i></div>
+            <div>
+              <h4 class="title">Trabajo en Equipo</h4>
+              <p class="description">He tenido la suerte de colaborar en diferentes proyectos con profesionales de distintos ámbitos, procurando siempre una comunicación clara y coordinación de tareas. </p><p class="description">Concretamente para el trabajo demaquetación web, tengo nociones de <strong>Figma</strong> y GitHub para facilitar el trabajo de desarrollo en equipo.</p>
+        
+            </div>
+          </div><!-- End Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+            <div>
+              <h4 class="title">Aprendizaje contínuo</h4>
+              <p class="description">Intento mantenerme en constante aprendizaje, explorando nuevas herramientas y aplicaciones del ámbito de desarrollo web, aplicando todo en proyectos personales y siempre teniendo en cuenta los últimos cambios en manuales oficiales.</p>
+       
+            </div>
+          </div><!-- End Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-brush"></i></div>
+            <div>
+              <h4 class="title">Creatividad y adaptación</h4>
+              <p class="description">Sobre todo me considero una persona muy creativa, con capacidad para generar multitud de ideas artísticas y visuales, pero también intento ser flexible para adaptarme a la situación y lo que sea necesario en el momento. </p><p class="description">¡Las limitaciones también refrescan la creatividad!</p>
+             
+            </div>
+          </div><!-- End Item -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+<!-- 
+    Eliminar todo lo TESTIMONIAL -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">Todo</li>
+            <li data-filter=".filter-graphdesign">Diseño Gráfico</li>
+            <li data-filter=".filter-illust">Ilustración</li>
+            <li data-filter=".filter-branding">Branding</li>
+            <li data-filter=".filter-webdesign">Diseño Web</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graphdesign">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/posavasos.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Diseño de producto</h4>
+                  <p>Diseño de packaging - Posavasos Black Belvet</p>
+                  <a href="assets/img/portfolio/posavasos.jpg" title="Diseño de packaging para posavasos de la marca ficticia Black Belvet." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graphdesign">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/posavasos1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Diseño de producto</h4>
+                  <p>Diseño de posavasos - Black Belvet</p>
+                  <a href="assets/img/portfolio/posavasos1.jpg" title="Posavasos pintados a mano con motivos veraniegos para la marca ficticia Black Belvet." data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graphdesign">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/posavasos2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Diseño de producto</h4>
+                  <p>Interior del packaging y etiquetado - Black Velvet</p>
+                  <a href="assets/img/portfolio/posavasos2.jpg" title=" Una muestra de cómo sería la presentacion y venta del producto." data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/ramhead.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding</h4>
+                  <p>Identidad de marca - Diseño de camiseta</p>
+                  <a href="assets/img/portfolio/ramhead.jpg" title="Diseño de camiseta para la marca Ramhead, ropa underground." data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+           
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/ramhead-west.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding</h4>
+                  <p>Identidad de marca - Diseño de camiseta</p>
+                  <a href="assets/img/portfolio/ramhead-west.jpg" title="Segundo diseño de camiseta para la marca Ramhead, ropa underground." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-illust">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/xilo-cabra.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Ilustración</h4>
+                  <p>Carnero - Linograbado</p>
+                  <a href="assets/img/portfolio/xilo-cabra.jpg" title="Linografías a tres tintas estampado sobre papel Fabriano Rosaespina." data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+             
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-webdesign">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/printinhell-home.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Diseño Web</h4>
+                  <p>Print In Hell - Inicio, proyecto de WordPress.</p>
+                  <a href="assets/img/portfolio/printinhell-home.jpg" title="Print In Hell - Página de Inicio." data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+             
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-webdesign">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/printinhell-shop.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Diseño Web</h4>
+                  <p>Print In Hell - Tienda, proyecto de WordPress.</p>
+                  <a href="assets/img/portfolio/printinhell-shop.jpg" title="Print In Hell - Página de la tienda." data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item  filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/a-a1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Diseño Gráfico</h4>
+                  <p>Carátula nuevo disco - Another Animal</p>
+                  <a href="assets/img/portfolio/a-a1.jpg" title="Portada propuesta para un futuro nuevo disco de la banda estadounidense, Another Animal." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+               
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/a_a.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Diseño Gráfico</h4>
+                  <p>Maquetación para nuevo disco - Another Animal</p>
+                  <a href="assets/img/portfolio/a_a.jpg" title="Maquetación para un futuro nuevo disco de la banda estadounidense, Another Animal" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graphdesign">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/bottanic1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Diseño Editorial</h4>
+                  <p>Revista de investigación - Bottanic.</p>
+                  <a href="assets/img/portfolio/bottanic1.jpg" title="Diseño para una revista científica especializada en artículos de botánica." data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+       
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graphdesign">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/corazon.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Diseño Editorial</h4>
+                  <p>Edición cuidada - El corazón de las Tinieblas</p>
+                  <a href="assets/img/portfolio/corazon.jpg" title="Planteamiento para la portada de una edición cuidada del libro El corazón de las Tinieblas." data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contacto</h2>
+        <p>¡No dudes en escribirme para cualquier duda o consulta que pudieras necesitar!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+            
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email</h3>
+                    <p>noeliagarridojimenez@gmail.com</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+         
+            </div><!-- End Info Item -->
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <div class="container">
+        <div class="copyright mb-5">
+          <span>Copyright</span><strong class="px-1 sitename">Noelia Garrido Jiménez</strong> 2025 | <span>Todos los derechos reservados.</span>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+    <!-- Vendor JS -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  
+
+</body>
+
+</html>
