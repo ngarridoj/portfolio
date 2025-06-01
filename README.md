@@ -1,2 +1,2 @@
 # Portfolio
-Collection of personal works of front-end and more
+Collection of personal works of graphic design, front-end and more.
