@@ -1,0 +1,53 @@
+main.faq section.faq-accordion .accordion{
+    border-top: 1px solid var(--color-principal);
+
+    & .accordion-item{
+        border:none;
+        border-bottom: 1px solid var(--color-principal);
+        background-color: transparent; 
+        border-radius: 0!important;
+        
+        & .accordion-button { 
+            border-radius: 0!important;
+            background-color: transparent; 
+            & span {
+                color: var(--color-principal);
+                font-weight:bold;
+            }  
+        }
+    }
+
+    & .accordion-body{
+        padding-left: .75rem; 
+        max-width: 640px;
+
+        @media(min-width: 768px){
+           padding-left: .5rem;  
+        }
+    }
+    & .row>* {
+        width:90%;
+   }
+} 
+
+main.faq section{
+
+    & .accordion-button::after{
+        transition: 0.3s;
+    }
+
+    & .accordion-button:not(.collapsed)::after{
+        transform: rotate(90deg) ;
+    }
+
+    & .accordion-button:focus{
+        background-color: transparent;
+        box-shadow:none;
+    } 
+
+    & .accordion-button::after , .accordion-button:not(.collapsed)::after{
+        background-image: url(/img/_icons/plus.svg); 
+    }
+}
+
+// arreglar selectores, para que se seleccione otro acordeon, y no el de servicios

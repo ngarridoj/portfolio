@@ -1,0 +1,48 @@
+
+.link-texto{
+    color: var(--link-texto);
+    font-weight: bold;
+    &:hover{
+        color: var(--color-transp);
+        transition: 0.2s ease-in-out;
+    }
+}
+
+.serv-item{
+    & img.reduccion{
+        width: 7rem;
+    }
+    & img.reduccion2{
+        width: 7rem;
+        margin-top: -0.5rem;
+        margin-bottom: 0.55rem;
+    }
+    & img{
+        width: 8rem;
+    }
+    & figcaption{
+        text-align: center;
+        font-family: "IBM Plex Mono", serif;
+        font-size: 1.5rem ;
+        @media (max-width: 576px) { 
+            font-size: 1.2rem ;    
+        }
+    }
+    & a {
+        display: flex;
+        justify-content: center;
+    }
+    &:hover{
+        filter: invert(53%) sepia(20%) saturate(1112%) hue-rotate(173deg) brightness(94%) contrast(99%);
+
+        transition: 0.2s ease-in-out;
+    }
+} 
+
+.servicios article{
+    display:flex;
+}
+
+main.servicios section.serv-indice{
+ margin: 0 auto;   
+}

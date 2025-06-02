@@ -1,0 +1,187 @@
+
+// Reparar los submenús y el background negro.
+
+nav{
+  position: relative;
+}
+
+nav .lang{
+  z-index: 99;
+  position: absolute;
+  right: -4%;
+  top: 51px;
+  background-color: var(--color-principal);
+  color: white;
+
+  @media (max-width: 768px) { 
+    display: none;
+  }
+
+  @media (min-width: 768px){
+    right: 6rem;
+    top: 51px;
+  }
+
+  &:hover{
+    background-color: white;
+    color: var(--color-principal);
+  }
+}
+
+.nav {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height:100vh;
+  top: 0;
+  transform: translateX(100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-transp);
+  color: #000;
+  font-family: "Oswald", sans-serif;
+
+  transition: 0.3s all ease;
+}
+.expanded {
+  transform: translateX(0%);
+}
+
+.nav .principal-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  height: auto;
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.nav ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  font-size: 3.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0 20px;
+  @media (max-width: 768px) {
+    font-size: 2rem;
+   }
+
+}
+.nav ul li a {
+  position: relative;
+  z-index: 2;
+  transition: 0.2s;
+  display: block;
+  width: 100%;
+    
+}
+.nav ul li:hover > a {
+  color: #fff;
+}
+
+.nav > ul > li::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 0%;
+  width: 110%;
+  margin-left: -10%;
+  background: #000;
+  transition: 0.3s all ease;
+  z-index: 1;
+}
+
+.nav ul li:hover::before {
+  height: 100%;
+}
+
+.ham-menu {
+  position: absolute;
+  z-index: 9999;
+  right: 1%;
+  top: 4%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 133.5px;
+  aspect-ratio: 1/1;
+  border-radius: 3px;
+  
+  @media (min-width: 768px){
+    right: -8px;
+    top: 0;
+  }
+
+  @media (max-width: 768px) { 
+    right: -1.5rem;
+    top: 0; 
+  }
+
+}
+
+.ham-menu .bar{
+  height: 2px;
+  width: 35px;
+  background: var(--color-principal) ;
+  transition: 0.3s transform ease-in-out;
+  transform-origin: center center;
+
+}
+
+//Barras
+
+.middle {
+  transform: translateY(5px);
+}
+
+.bottom {
+  transform: translateY(10px);
+}
+.active .top {
+  transform: rotate(45deg) translate(3px,2px);
+  background: #000;
+}
+
+.active .middle{
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.active .bottom {
+  transform: rotate(-45deg);
+  background: #000;
+}
+.active {
+  transition: 0.5s all ease;
+}
+.active:hover {
+  background: #111;
+}
+
+.active:hover > .top,
+.active:hover > .bottom {
+  background: #fff;
+}
+
+//           Sub-nav          //
+
+.nav .card{
+  border: 0 none;
+  background: var(--color-principal);
+  
+  & ul li a{
+    color: #fff;
+  }
+  & ul li a:hover {
+    color: var(--color-principal);
+  }
+
+}
+
+

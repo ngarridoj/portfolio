@@ -1,0 +1,9 @@
+.my-5{
+    margin-top:12rem!important;
+}
+
+main.contacto form{
+    @media (min-width: 992px) { 
+          width: 46rem;
+    }
+}

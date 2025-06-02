@@ -1,0 +1,12 @@
+main.nosotros figure{
+
+    & figcaption {
+        @media (min-width: 992px) { 
+            margin-inline: 6rem;
+        }
+        
+        @media (min-width: 1200px) { 
+            margin-inline: 11rem;
+        }
+    }
+}
