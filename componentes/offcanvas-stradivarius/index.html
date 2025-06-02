@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css"/>
+
+    <script src="https://kit.fontawesome.com/efbe4d12a8.js" crossorigin="anonymous"></script>
+
+    <title>Stradivarius | Offcanvas</title>
+</head>
+<body>
+<main>
+    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Menú hamburguesa</button>
+
+    <div class="offcanvas offcanvas-top open-menu" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      
+      <div class="offcanvas-body row row-cols-md-2 p-0">
+        
+        <div class="menu-nav">
+            <div class="hader-nav position-relative">
+                
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                
+                <div class="d-flex justify-content-between">
+                    <a href="#" class="logo"><img src="_img/logo-stradivarius.png" alt="logoStradivarius"></a>
+
+                    <div class="pe-5 d-flex">
+                        <button class="btn"><svg style="fill: rgb(0, 0, 0);" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.209 9.51628C14.3007 8.53896 13.0934 8.00098 11.809 8.00098C10.5245 8.00098 9.31677 8.53896 8.4084 9.51628C7.50003 10.4936 7 11.7925 7 13.1745C7 14.5569 7.50003 15.8558 8.4084 16.8331L16 25.001L23.5916 16.8331C24.4995 15.8563 25 14.5574 25 13.1745C25 11.793 24.5 10.4936 23.5916 9.51628C22.6832 8.53896 21.4764 8.00098 20.1915 8.00098C18.9066 8.00098 17.6998 8.53896 16.7914 9.51628L16.0005 10.3678L15.209 9.51628ZM17.503 10.2629L16.0007 11.8801L14.4975 10.2629C13.7757 9.48624 12.8241 9.06348 11.809 9.06348C10.7937 9.06348 9.84168 9.48632 9.11992 10.2629C8.39768 11.0399 8 12.07 8 13.1745C8 14.2794 8.39771 15.3095 9.11992 16.0866L16 23.4889L22.8801 16.0866C23.6019 15.3099 24 14.2798 24 13.1745C24 12.0705 23.6023 11.0399 22.8801 10.2629C22.1582 9.4862 21.2071 9.06348 20.1915 9.06348C19.176 9.06348 18.2248 9.4862 17.503 10.2629Z"></path></svg></button>
+
+                        <button class="btn"><svg class="shop-cart-icon" style="fill: rgb(0, 0, 0);" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.7673 6.47081C15.1579 6.29438 15.5817 6.20312 16.0103 6.20312C16.439 6.20312 16.8627 6.29438 17.2534 6.47081C17.644 6.64725 17.9926 6.90483 18.2761 7.22643C18.5595 7.54802 18.7712 7.92626 18.8971 8.33601C19.0198 8.73524 19.0583 9.15546 19.0103 9.57011V10.17H22.9303C23.2065 10.17 23.4303 10.3938 23.4303 10.67V21.54C23.4303 22.203 23.1669 22.8389 22.6981 23.3078C22.2292 23.7766 21.5934 24.04 20.9303 24.04H11.0703C10.4073 24.04 9.77139 23.7766 9.30255 23.3078C8.83371 22.8389 8.57031 22.203 8.57031 21.54V10.67C8.57031 10.3938 8.79417 10.17 9.07031 10.17H13.0103V9.57011C12.9624 9.15546 13.0009 8.73524 13.1235 8.33601C13.2495 7.92626 13.4612 7.54802 13.7446 7.22643C14.028 6.90483 14.3766 6.64725 14.7673 6.47081ZM14.0103 10.17H18.0103V9.53998C18.0103 9.51897 18.0116 9.49797 18.0143 9.47712C18.0503 9.19268 18.0254 8.90382 17.9412 8.62975C17.857 8.35569 17.7154 8.10269 17.5258 7.88758C17.3362 7.67248 17.1031 7.50019 16.8418 7.38218C16.5805 7.26416 16.297 7.20312 16.0103 7.20312C15.7236 7.20312 15.4402 7.26416 15.1789 7.38218C14.9176 7.50019 14.6844 7.67248 14.4948 7.88758C14.3053 8.10269 14.1637 8.35569 14.0794 8.62975C13.9952 8.90382 13.9703 9.19268 14.0063 9.47712C14.009 9.49797 14.0103 9.51897 14.0103 9.53998V10.17ZM9.57031 11.17V21.54C9.57031 21.9378 9.72835 22.3193 10.0097 22.6006C10.291 22.882 10.6725 23.04 11.0703 23.04H20.9303C21.3281 23.04 21.7097 22.882 21.991 22.6006C22.2723 22.3193 22.4303 21.9378 22.4303 21.54V11.17H9.57031Z"></path></svg></button>
+                    </div>
+
+                </div>
+                            
+                <button class="btn searcher" type="button" data-bs-toggle="offcanvas" data-bs-target="#search" aria-controls="search">Buscar por producto, colección... <span class=""><i class="fa-solid fa-magnifying-glass"></i></span></button>
+            </div>
+            
+            <nav>
+                <ul class="list-unstyled pt-2">
+                    <li><a href="#">Nuevo</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">Chaquetas</a></li>
+                    <li><a href="#">Jerséis & cárdigans</a></li>
+                    <li><a href="#">Fiesta</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">Ropa </a></li>
+                    <li><a href="#">STR Teen</a></li>
+                    <li><a href="#">Casual Sport</a></li>
+                    <li><a href="#">NEW</a></li>
+                    <li><a href="#">Zapatos</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Bolsos</a></li>
+                    <li><a href="#">Tarjeta regalo</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">#STRADILOOKS🤳</a></li>
+                </ul>
+            </nav>
+             
+        </div>
+        <div class="p-0 img-box">
+            <a href="#"><img src="_img/destacado.jpg" alt="Novedades"></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="search" aria-labelledby="searchLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="searchLabel">Buscador</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <input type="search">
+      </div>
+    </div>
+    
+
+
+</main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>

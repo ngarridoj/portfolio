@@ -1,0 +1,116 @@
+
+*{
+    font-family: "Oswald", sans-serif; 
+}
+
+img{
+    max-width:100%;
+    height: 100%;
+    
+}
+
+.btn-close{
+    position: absolute;
+    background: none;
+    background-image: url(_img/cross.svg);
+    background-repeat: no-repeat;
+    top: -2.5rem;
+    left: -3rem;
+    background-position: center;
+    
+}
+
+.btn-close:focus, .btn-close:active {
+    outline: none;
+    box-shadow: none;
+}
+
+
+.open-menu{
+    height: 100%!important;
+    font-size: 28px;
+    & img {
+        overflow: hidden;
+        object-fit: cover;
+        object-position:5% 100% ;
+    }
+
+    & img:hover {
+        opacity: .6;
+        transform: scale(1.1);
+        transition: .5s all ease-in-out;
+        overflow:hidden;
+        
+    }
+}
+
+.logo{ 
+    display:inline-block;
+    
+    & img {
+        width:83%;
+        object-fit: contain;
+    }
+}
+
+.searcher{
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: visible;
+    margin-top: 10px;
+    margin-right: 15%;
+    border-bottom: 1px solid #707070;
+    width:85%;
+    border-radius: 0;
+    
+}
+
+.menu-nav{
+    padding-left: 8%;
+    padding-top: 74px;
+}
+
+
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    text-transform: uppercase;
+    position:relative
+}
+
+nav a::after{
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    background: #000;
+    transition: width .3s ease 0s, left .3s ease 0s;
+    width: 0;
+    max-width: 60px;
+    text-align: center;
+}
+
+/**** en la transition, cuando salen no se anima la transición, si no al salir del hover ****/
+
+nav a:hover::after{
+    width: 100%;
+    left: 15px;
+    right: 10px;
+
+}
+
+.img-box{
+    overflow: hidden;
+    background: #fff;
+}
+
+.spacer{
+    visibility: hidden;
+    height: 30px;
+}
